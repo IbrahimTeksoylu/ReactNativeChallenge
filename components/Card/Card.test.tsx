@@ -8,5 +8,9 @@ describe("Card", () => {
   it("renders correctly", () => {
     render(<Default />);
     expect(screen.getByTestId("CardContainer")).toBeTruthy();
+    expect(screen.getByText(/12:00 - 12:30/)).toBeTruthy();
+    expect(screen.getByText(/266/)).toBeTruthy();
+    expect(screen.getByText(/263/)).toBeTruthy();
+    expect(screen.getByText(/moderate/)).toBeTruthy();
   });
 });
