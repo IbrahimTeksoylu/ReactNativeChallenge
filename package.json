@@ -11,6 +11,7 @@
     "test:unit": "TZ=UTC jest --coverage",
     "test:watch": "TZ=UTC jest --watch",
     "test": "npm run test:unit",
+    "test-jest": "jest",
     "storybook:web": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "storybook-generate": "sb-rn-get-stories --config-path .ondevice",
@@ -19,6 +20,7 @@
     "storybook:android": "cross-env EXPO_PUBLIC_STORYBOOK_ENABLED='true' expo start --android"
   },
   "dependencies": {
+    "@expo/vector-icons": "^14.0.4",
     "@gorhom/bottom-sheet": "^5.0.6",
     "@react-native-async-storage/async-storage": "1.23.1",
     "@react-native-community/datetimepicker": "8.2.0",
